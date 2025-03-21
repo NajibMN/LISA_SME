@@ -6,14 +6,14 @@
     <title>Thank You - ViralMeme</title>
     <style>
       body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #d5e8eb, #bfdddb);
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        flex-direction: column;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #d5e8eb, #bfdddb);
         color: #333;
       }
 
@@ -31,12 +31,18 @@
       }
 
       .thank-you-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background-color: white;
         padding: 5% 1%;
         text-align: center;
         border-radius: 10px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         margin-top: 120px;
+        width: 100%;
+        max-width: 600px;
       }
 
       .thank-you-container img {
@@ -68,6 +74,7 @@
       .thank-you-container a:hover {
         background-color: #ff007f;
       }
+
     </style>
   </head>
   <body>
@@ -80,7 +87,7 @@
     </div>
 
     <div class="thank-you-container">
-      <img src="thanksimages/lisa.png" style="width: 70%" /><br /><br /><br />
+      <img style="width: 50%;" src="thanksimages/lisa.png" />
       <h1>Thanks for submitting!</h1>
       <p>Your form has been submit!</p>
       <a href="index.html">Go Home</a>
